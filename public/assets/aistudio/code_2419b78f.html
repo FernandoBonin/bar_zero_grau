@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="pt-BR"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Work+Sans:wght@400;500;600;700&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@100..900&family=Work+Sans:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#131312;}body{overscroll-behavior-y:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface": "#131312", "on-primary-container": "#543500", "secondary-fixed": "#ffdad4", "primary": "#fbba60", "outline-variant": "#504537", "surface-container": "#20201e", "on-tertiary-container": "#4e3629", "on-primary-fixed": "#291800", "primary-fixed": "#ffddb4", "on-secondary-fixed-variant": "#773127", "inverse-surface": "#e5e2de", "on-secondary-container": "#ff9f90", "secondary-container": "#7a3329", "on-error-container": "#ffdad6", "tertiary": "#e3bfad", "surface-container-low": "#1c1c1a", "on-surface-variant": "#d5c4b2", "error": "#ffb4ab", "outline": "#9d8e7e", "on-secondary": "#5a1b13", "surface-container-high": "#2a2a28", "on-primary": "#452b00", "on-tertiary-fixed": "#2a170b", "on-secondary-fixed": "#3d0603", "background": "#131312", "tertiary-fixed-dim": "#e3bfad", "tertiary-fixed": "#ffdbc9", "surface-container-lowest": "#0e0e0d", "on-surface": "#e5e2de", "on-background": "#e5e2de", "on-tertiary": "#422b1f", "primary-container": "#d69a43", "inverse-primary": "#835500", "surface-bright": "#393937", "secondary-fixed-dim": "#ffb4a8", "surface-variant": "#353533", "primary-fixed-dim": "#fbba60", "on-tertiary-fixed-variant": "#5a4133", "surface-dim": "#131312", "on-error": "#690005", "surface-container-highest": "#353533", "tertiary-container": "#c09f8d", "inverse-on-surface": "#31302e", "secondary": "#ffb4a8", "surface-tint": "#fbba60", "error-container": "#93000a", "on-primary-fixed-variant": "#633f00" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-md": "1rem", "gutter": "1rem", "margin": "1.5rem", "space-sm": "0.5rem", "gutter-mobile": "0.75rem", "space-xl": "2rem", "space-xs": "0.25rem", "margin-mobile": "1rem", "space-lg": "1.5rem" }, "fontFamily": { "body-md": ["Work Sans"], "headline-xl-mobile": ["Playfair Display"], "label-md": ["Work Sans"], "label-sm": ["Work Sans"], "body-sm": ["Work Sans"], "headline-xl": ["Playfair Display"], "body-lg": ["Work Sans"], "headline-sm": ["Playfair Display"], "headline-lg-mobile": ["Playfair Display"], "label-lg": ["Work Sans"], "headline-md": ["Playfair Display"], "headline-lg": ["Playfair Display"] }, "fontSize": { "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-xl-mobile": ["30px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.06em", "fontWeight": "600" }], "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "700" }], "body-sm": ["12px", { "lineHeight": "18px", "fontWeight": "400" }], "headline-xl": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "headline-sm": ["18px", { "lineHeight": "24px", "fontWeight": "600" }], "headline-lg-mobile": ["24px", { "lineHeight": "30px", "fontWeight": "600" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.04em", "fontWeight": "600" }], "headline-md": ["22px", { "lineHeight": "28px", "fontWeight": "600" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface font-body-md text-body-md flex flex-col min-h-screen selection:bg-primary-container selection:text-on-primary-fixed"><header class="fixed top-0 w-full z-50 pt-safe bg-surface-container-lowest/85 backdrop-blur-xl shadow-[0_4px_24px_rgba(0,0,0,0.55)]"><div class="h-16 px-gutter-mobile flex items-center justify-between gap-space-xs"><div class="flex items-center gap-space-xs min-w-0 flex-1"><button aria-label="Voltar" class="w-11 h-11 -ml-1 rounded-full flex items-center justify-center text-on-surface hover:text-primary hover:bg-surface-container-high transition-colors" onclick="history.back()"><span class="material-symbols-outlined text-[22px]">arrow_back</span></button><img alt="Logo Bar Zero Grau Tatuapé" class="h-7 w-auto object-contain shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAStbBTYcTlN7pHurgQYDYh7fahGxJWfFc8wE2VUpBIiJZwi0v7rmqdKOLCSLu93Oe-478sCA9J5LDWEOVxbT3iPGhIJVlx6ZMvd-gf43hiY-8C8INI849bGXs2WK4X_421KJEbw9fayikfdrn7UZp6Dun2Jx5MecIx-TM8zvYhqJf8UAxk2awFnkGf9L0dQ852zhr5d1nFgowfQq0XGk0QbB6jXjDlrMXi-9vBbnuJ"/><div class="flex flex-col min-w-0"><h1 class="font-headline-sm text-headline-sm text-on-surface tracking-tight truncate leading-tight">Detalhe Do Prato</h1><span class="font-label-sm text-label-sm uppercase tracking-wider text-outline truncate">Bar Zero Grau • Tatuapé</span></div></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-safe bg-surface"><div class="flex flex-col w-full pb-10">
+<!-- Top Navigation & Action Strip -->
+<div class="px-gutter-mobile py-space-sm flex items-center justify-between gap-space-sm bg-surface-container-low/60 backdrop-blur-md">
+<button aria-label="Voltar para Chapas & Carnes" class="flex items-center gap-space-xs text-on-surface-variant hover:text-primary transition-colors py-1.5 px-2 -ml-2 rounded-lg" onclick="history.back()">
+<span class="material-symbols-outlined text-[20px] text-primary">arrow_back</span>
+<span class="font-label-md text-label-md tracking-wide">Voltar para Chapas & Carnes</span>
+</button>
+<div class="flex items-center gap-space-xs">
+<button aria-label="Favoritar Prato" class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors" id="btn-favorite" onclick="toggleFavorite()">
+<span class="material-symbols-outlined text-[19px]" id="fav-icon">favorite_border</span>
+</button>
+<button aria-label="Compartilhar Prato" class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors" onclick="shareDish()">
+<span class="material-symbols-outlined text-[19px]">share</span>
+</button>
+</div>
+</div>
+<!-- Hero Presentation -->
+<div class="relative w-full aspect-[4/3] max-h-80 overflow-hidden bg-surface-container-lowest">
+<img alt="Picanha no Rechaud do Bar Zero Grau" class="w-full h-full object-cover brightness-95" data-alt="Fotografia gastronômica em ângulo fechado da Picanha no Rechaud servida em chapa de ferro fundido quente e fumegante do Bar Zero Grau Tatuapé. Fatias generosas e suculentas de picanha grelhada com capa de gordura dourada, alho frito salpicado por cima, acompanhada de cumbucas de vinagrete fresco artesanal e farofa crocante dourada na manteiga. Iluminação intimista e aconchegante de boteco paulistano com tons amadeirados escuros e reflexos âmbar reluzentes." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDE9_g6o98euJlfVPRsVFUyBli2pN2Aev5T6s-5QYauPb18VXHwbQN_rfdDeQj9rPDD5YLFs8pIGQIm3Ua0jFNgWdaF9ypkc8KvGRHbGrOTTAT9pCUW1jzwWKWAeWR_MCiJecPZKYqnfR2u8g8mRAhfxS3Tb3au6F_ZC97pLFNZclLDSYKOe9ogswv-NRlM8wF8Spwkp9FDJjqxjVkRAc4dxhjA_5nEUHHs7gxeyPxb"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-surface/40 to-transparent"></div>
+<!-- Hero Badges -->
+<div class="absolute bottom-3 left-4 right-4 flex items-center justify-between">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-container/95 text-secondary-fixed font-label-sm text-label-sm tracking-widest uppercase shadow-md backdrop-blur-sm">
+<span class="material-symbols-outlined text-[14px] text-secondary">local_fire_department</span>
+        Especialidade da Casa • Chapa Quente
+      </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container-highest/90 text-primary font-label-sm text-label-sm shadow-sm backdrop-blur-sm">
+<span class="material-symbols-outlined text-[14px]">stars</span>
+        Zero Grau
+      </span>
+</div>
+</div>
+<!-- Content Body -->
+<div class="px-gutter-mobile flex flex-col gap-space-lg -mt-1 relative z-10">
+<!-- Title & Portion Metadata -->
+<div class="flex flex-col gap-space-xs">
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface tracking-tight leading-tight">
+        Picanha no Rechaud
+      </h2>
+<p class="font-label-md text-label-md uppercase tracking-wider text-primary">
+        (Picanha Zero Grau Tradicional)
+      </p>
+<div class="flex flex-wrap items-center gap-space-sm pt-1">
+<div class="flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-surface-container text-on-surface-variant font-label-md text-label-md">
+<span class="material-symbols-outlined text-[17px] text-primary">group</span>
+<span>Serve 2 a 3 pessoas generosamente</span>
+</div>
+<div class="flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-surface-container text-on-surface-variant font-label-md text-label-md">
+<span class="material-symbols-outlined text-[17px] text-primary">skillet</span>
+<span>Chapa de Ferro Fundido</span>
+</div>
+</div>
+</div>
+<!-- Gastronomic Description -->
+<div class="p-space-md rounded-xl bg-surface-container-low shadow-sm">
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+        Corte nobre e suculento de picanha maturada, fatiada e servida sobre rechaud com chapa de ferro fundido quente à mesa. Mantém o calor envolvente e o ponto ideal da carne estalando durante todo o seu encontro com amigos e família.
+      </p>
+</div>
+<!-- Acompanhamentos Inclusos Section -->
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">room_service</span>
+          Acompanhamentos Inclusos
+        </h3>
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Completos à Mesa</span>
+</div>
+<div class="grid grid-cols-1 gap-2.5">
+<!-- Item 1 -->
+<div class="flex items-center gap-3 p-3 rounded-xl bg-surface-container">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center shrink-0 text-primary">
+<span class="material-symbols-outlined text-[22px]">grain</span>
+</div>
+<div class="flex flex-col min-w-0">
+<h4 class="font-label-lg text-label-lg text-on-surface truncate">Farofa Crocante da Casa</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Temperada lentamente na manteiga com especiarias boteco.</p>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="flex items-center gap-3 p-3 rounded-xl bg-surface-container">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center shrink-0 text-primary">
+<span class="material-symbols-outlined text-[22px]">eco</span>
+</div>
+<div class="flex flex-col min-w-0">
+<h4 class="font-label-lg text-label-lg text-on-surface truncate">Vinagrete Fresco Artesanal</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Tomates frescos picados, cebola roxa e mix de ervas finas.</p>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="flex items-center gap-3 p-3 rounded-xl bg-surface-container">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center shrink-0 text-primary">
+<span class="material-symbols-outlined text-[22px]">flare</span>
+</div>
+<div class="flex flex-col min-w-0">
+<h4 class="font-label-lg text-label-lg text-on-surface truncate">Alho Dourado Frito</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Lâminas crocantes salpicadas diretamente sobre o corte da carne.</p>
+</div>
+</div>
+<!-- Item 4 -->
+<div class="flex items-center gap-3 p-3 rounded-xl bg-surface-container">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center shrink-0 text-primary">
+<span class="material-symbols-outlined text-[22px]">bakery_dining</span>
+</div>
+<div class="flex flex-col min-w-0">
+<h4 class="font-label-lg text-label-lg text-on-surface truncate">Cesta de Pães Quentinhos</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Fatiados na hora com casca crocante para molhar no azeite da chapa.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Valor & Informações de Cozinha -->
+<div class="p-space-md rounded-xl bg-surface-container-high shadow-md flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Valor do Prato</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">Consulte o Garçom</span>
+</div>
+<div class="px-3 py-1.5 rounded-full bg-surface-container-lowest text-on-surface flex items-center gap-1.5 shadow-inner">
+<span class="material-symbols-outlined text-primary text-[18px]">receipt_long</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Preço do dia</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-space-xs pt-1">
+<div class="flex items-center gap-2 p-2.5 rounded-lg bg-surface-container-lowest">
+<span class="material-symbols-outlined text-primary text-[18px] shrink-0">timer</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-outline uppercase truncate">Preparo</span>
+<span class="font-body-sm text-body-sm text-on-surface font-medium truncate">25 a 30 min</span>
+</div>
+</div>
+<div class="flex items-center gap-2 p-2.5 rounded-lg bg-surface-container-lowest">
+<span class="material-symbols-outlined text-secondary text-[18px] shrink-0">warning</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-outline uppercase truncate">Alérgicos</span>
+<span class="font-body-sm text-body-sm text-on-surface truncate">Contém glúten</span>
+</div>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-outline-variant italic">
+        * Prato preparado na hora com cortes selecionados. Sem aditivos ou conservantes químicos artificiais.
+      </p>
+</div>
+<!-- Sugestão de Harmonização do Bartender -->
+<div class="p-space-md rounded-xl bg-surface-container-low shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">wine_bar</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Harmonização do Bartender</h3>
+</div>
+<div class="flex items-center gap-3 p-3 rounded-xl bg-surface-container">
+<img alt="Harmonização de Bebidas do Bar Zero Grau" class="w-16 h-16 rounded-lg object-cover shrink-0" data-alt="Seleção sofisticada de coquetéis artesanais e chopp cremoso em copos elegantes dispostos no balcão de madeira nobre do Bar Zero Grau Tatuapé. Taças de gin tônicas decoradas com zimbro e fatias de limão siciliano, tulipas de chopp trincando com espuma branca densa, e um copo baixo de Negroni clássico com gelo cristalino e casca de laranja retorcida contra luz suave e aconchegante." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfmhYTCpx5-GBCTyi0iLWiMI_ptGmnZDXViq9-6DM29T_MCkIPQVX12Eaz-wCbJxsPbEifBvabyPwrJ87sAMBQTv_cuKuFz2h1zWQREr54l-mVk6txbiEvZ_QikjESiEhSHj5-k-JuBmCnSy1FzP-_wYOzTQnwnHHlXyp3oCS3Fv2bUaTOxBt7gux7Nsh5chZsrelmdAZEDmWHzelplXTKFwBaiBIcLwpxMd_31n5i"/>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-wide">Sugestão Especial</span>
+<p class="font-body-sm text-body-sm text-on-surface line-clamp-2">
+            Chopp Amstel Extra Gelado ou Coquetel Negroni Clássico para equilibrar a suculência do corte grelhado.
+          </p>
+</div>
+</div>
+<a class="inline-flex items-center justify-between text-primary hover:text-primary-fixed transition-colors font-label-md text-label-md pt-1" href="javascript:void(0)" onclick="notifyDrinksNav()">
+<span>Explorar Carta de Coquetéis & Chopp</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+<!-- Cardápio Digital Consultivo Disclaimer & Ações de Mesa -->
+<div class="flex flex-col gap-space-sm pt-2">
+<div class="p-3 rounded-lg bg-surface-container text-center flex items-center justify-center gap-2 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[18px] text-primary">restaurant</span>
+<span>Cardápio exclusivo para consulta presencial no boteco.</span>
+</div>
+<button class="w-full py-3.5 px-space-md rounded-xl bg-primary text-on-primary font-label-lg text-label-lg uppercase tracking-wider flex items-center justify-center gap-2 shadow-lg hover:bg-primary-fixed transition-colors active:scale-[0.98]" onclick="requestWaiterCall()">
+<span class="material-symbols-outlined text-[20px]">room_service</span>
+<span>Avisar Atendimento na Mesa</span>
+</button>
+<button class="w-full py-3 px-space-md rounded-xl bg-surface-container text-on-surface font-label-md text-label-md flex items-center justify-center gap-2 hover:bg-surface-container-high transition-colors" onclick="history.back()">
+<span class="material-symbols-outlined text-[18px] text-primary">menu_book</span>
+<span>Ver Outros Pratos da Chapa</span>
+</button>
+</div>
+</div>
+<!-- Toast Notification Feedback Component -->
+<div class="fixed bottom-6 left-4 right-4 z-50 transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none flex justify-center" id="toast-feedback">
+<div class="px-4 py-2.5 rounded-full bg-surface-bright text-on-surface shadow-xl flex items-center gap-2 font-label-md text-label-md">
+<span class="material-symbols-outlined text-primary text-[18px]" id="toast-icon">check_circle</span>
+<span id="toast-text">Prato adicionado aos favoritos!</span>
+</div>
+</div>
+</div>
+<script>
+  let isFavorite = false;
+
+  function showToast(message, icon = 'check_circle') {
+    const toast = document.getElementById('toast-feedback');
+    const toastText = document.getElementById('toast-text');
+    const toastIcon = document.getElementById('toast-icon');
+    if (!toast) return;
+
+    toastText.textContent = message;
+    toastIcon.textContent = icon;
+    toast.classList.remove('translate-y-24', 'opacity-0');
+    toast.classList.add('translate-y-0', 'opacity-100');
+
+    setTimeout(() => {
+      toast.classList.remove('translate-y-0', 'opacity-100');
+      toast.classList.add('translate-y-24', 'opacity-0');
+    }, 2800);
+  }
+
+  function toggleFavorite() {
+    isFavorite = !isFavorite;
+    const favIcon = document.getElementById('fav-icon');
+    const btn = document.getElementById('btn-favorite');
+    if (isFavorite) {
+      favIcon.textContent = 'favorite';
+      favIcon.style.fontVariationSettings = "'FILL' 1";
+      btn.classList.add('text-secondary');
+      showToast('Picanha no Rechaud salva nos favoritos!', 'favorite');
+    } else {
+      favIcon.textContent = 'favorite_border';
+      favIcon.style.fontVariationSettings = "'FILL' 0";
+      btn.classList.remove('text-secondary');
+      showToast('Prato removido dos favoritos.', 'favorite_border');
+    }
+  }
+
+  function shareDish() {
+    if (navigator.share) {
+      navigator.share({
+        title: 'Picanha no Rechaud - Bar Zero Grau Tatuapé',
+        text: 'Dá uma olhada nessa Picanha servida no rechaud do Bar Zero Grau Tatuapé!',
+        url: window.location.href,
+      }).catch(() => {});
+    } else {
+      showToast('Link do prato copiado para compartilhar!', 'content_copy');
+    }
+  }
+
+  function requestWaiterCall() {
+    showToast('Aviso enviado! O garçom virá até sua mesa.', 'room_service');
+  }
+
+  function notifyDrinksNav() {
+    showToast('Abrindo seção de Bebidas e Drinks...', 'wine_bar');
+  }
+</script></main></body></html>

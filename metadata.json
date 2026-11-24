@@ -1,0 +1,6 @@
+{
+  "name": "Bar Zero Grau — Tatuapé",
+  "description": "Cardápio digital oficial do Bar Zero Grau Tatuapé. Chopp trincando, porções tradicionais e carnes nobres no rechaud.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
